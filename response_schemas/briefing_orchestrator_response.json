@@ -1,0 +1,96 @@
+{
+  "agent_name": "Briefing Orchestrator",
+  "agent_id": "69ec5aa7f7d0c95f8d9bf095",
+  "description": "Coordinates 6 sub-agents across 3 layers: Layer 1 (Analyst then Strategist sequential), Layer 2 (Bull and Bear parallel then Judge sequential), Layer 3 (Editor). Selects exactly ONE thesis for debate \u2014 highest combined risk_implication x portfolio_impact score. Other theses pass directly to Editor without debate. Aggregates final briefing JSON.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "masthead": {
+      "date": "string",
+      "briefing_number": "string",
+      "user_name": "string"
+    },
+    "headline": "string",
+    "stat_strip": {
+      "portfolio_value": "string",
+      "week_return": "string",
+      "vs_nifty": "string",
+      "goal_status": "string"
+    },
+    "opening": "string",
+    "stories": [
+      {
+        "title": "string",
+        "body": "string",
+        "action": {
+          "text": "string",
+          "confidence": "number",
+          "classification": "string"
+        }
+      }
+    ],
+    "pull_quote": "string",
+    "the_other_side": "string",
+    "goal_check": "string",
+    "calendar": [
+      {
+        "ticker": "string",
+        "event": "string",
+        "date": "string"
+      }
+    ],
+    "sign_off": "string",
+    "agent_transcripts": {
+      "analyst": "string",
+      "strategist": "string",
+      "bull": "string",
+      "bear": "string",
+      "judge": "string"
+    }
+  },
+  "example_response": {
+    "masthead": {
+      "date": "sample string",
+      "briefing_number": "sample string",
+      "user_name": "sample string"
+    },
+    "headline": "sample string",
+    "stat_strip": {
+      "portfolio_value": "sample string",
+      "week_return": "sample string",
+      "vs_nifty": "sample string",
+      "goal_status": "sample string"
+    },
+    "opening": "sample string",
+    "stories": [
+      {
+        "title": "sample string",
+        "body": "sample string",
+        "action": {
+          "text": "sample string",
+          "confidence": 0,
+          "classification": "sample string"
+        }
+      }
+    ],
+    "pull_quote": "sample string",
+    "the_other_side": "sample string",
+    "goal_check": "sample string",
+    "calendar": [
+      {
+        "ticker": "sample string",
+        "event": "sample string",
+        "date": "sample string"
+      }
+    ],
+    "sign_off": "sample string",
+    "agent_transcripts": {
+      "analyst": "sample string",
+      "strategist": "sample string",
+      "bull": "sample string",
+      "bear": "sample string",
+      "judge": "sample string"
+    }
+  }
+}

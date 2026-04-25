@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0a0a0a;
+    --surface: #0f0f0f;
+    --text: #f5f1e8;
+    --text-dim: rgba(245, 241, 232, 0.55);
+    --text-muted: rgba(245, 241, 232, 0.35);
+    --accent: #d4a574;
+    --accent-hover: #c89866;
+    --rule: rgba(245, 241, 232, 0.15);
+    --gain: #5a9b6b;
+    --loss: #c85050;
+    --input-bg: rgba(255, 255, 255, 0.02);
+    --input-border: rgba(245, 241, 232, 0.2);
+
+    --background: 0 0% 4%;
+    --foreground: 40 33% 93%;
+    --card: 0 0% 6%;
+    --card-foreground: 40 33% 93%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 40 33% 93%;
+    --primary: 28 50% 64%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 6%;
+    --secondary-foreground: 40 33% 93%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 40 33% 55%;
+    --accent: #d4a574;
+    --accent-foreground: 0 0% 4%;
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 40 33% 93%;
+    --border: 40 10% 20%;
+    --input: 40 10% 20%;
+    --ring: 28 50% 64%;
+    --radius: 0.25rem;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 40 33% 93%;
+    --sidebar-primary: 28 50% 64%;
+    --sidebar-primary-foreground: 0 0% 4%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 40 33% 93%;
+    --sidebar-border: 40 10% 20%;
+    --sidebar-ring: 28 50% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-inter), 'Inter', system-ui, sans-serif;
+    line-height: 1.7;
+  }
+  *:focus-visible {
+    outline: none;
+  }
+}

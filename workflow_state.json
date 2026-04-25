@@ -1,0 +1,69 @@
+{
+  "app_name": "The Monday Briefing",
+  "pattern": "manager-subagent",
+  "manager_agent": {
+    "agent_id": "69ec5aa7f7d0c95f8d9bf095",
+    "name": "Briefing Orchestrator",
+    "provider": "openai",
+    "model": "gpt-4.1"
+  },
+  "sub_agents": [
+    {
+      "agent_id": "69ec5a6d20c378a25b45e8b8",
+      "name": "Data Analyst Agent",
+      "layer": 1,
+      "order": 1,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "agent_id": "69ec5a6ddcdea9592ddcd96a",
+      "name": "Portfolio Strategist Agent",
+      "layer": 1,
+      "order": 2,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "agent_id": "69ec5a6df00d79a836e9f8cd",
+      "name": "Bull Agent",
+      "layer": 2,
+      "order": 1,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "agent_id": "69ec5a6e20c378a25b45e8ba",
+      "name": "Bear Agent",
+      "layer": 2,
+      "order": 1,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "agent_id": "69ec5a8c9291081b210b36a4",
+      "name": "Judge Agent",
+      "layer": 2,
+      "order": 2,
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "agent_id": "69ec5a8cab1cfba2fa64049b",
+      "name": "Editor Agent",
+      "layer": 3,
+      "order": 1,
+      "provider": "openai",
+      "model": "gpt-4.1"
+    }
+  ],
+  "agent_ids": {
+    "briefing_orchestrator": "69ec5aa7f7d0c95f8d9bf095",
+    "data_analyst_agent": "69ec5a6d20c378a25b45e8b8",
+    "portfolio_strategist_agent": "69ec5a6ddcdea9592ddcd96a",
+    "bull_agent": "69ec5a6df00d79a836e9f8cd",
+    "bear_agent": "69ec5a6e20c378a25b45e8ba",
+    "judge_agent": "69ec5a8c9291081b210b36a4",
+    "editor_agent": "69ec5a8cab1cfba2fa64049b"
+  }
+}
